@@ -11,7 +11,7 @@
 - **Qdrant:** ฐานข้อมูลเวกเตอร์ (Vector Database) สำหรับการจัดเก็บและค้นหาข้อมูล
 - **Redis:** ระบบจัดการแคชและคิว
 - **MinIO:** ระบบจัดเก็บข้อมูลแบบ S3-compatible
-- **PGVector:** ฐานข้อมูลเชิงสัมพันธ์
+- **PGVector/Postgres:** ฐานข้อมูลเชิงสัมพันธ์
 - **PgAdmin:** UI สำหรับจัดการ PostgreSQL
 - **Cloudflared:** เชื่อมต่อกับ Cloudflare Tunnel
 - **RedisInsight:** UI สำหรับจัดการ Redis
@@ -82,7 +82,7 @@ docker compose up -d
 
 ### 3. `docker-compose-full.yml` (โหมด production-like ครบเครื่อง)
 - **บริการ:**  
-  - n8n, postgres, pgadmin, qdrant, cloudflared
+  - n8n, pgvector, pgadmin, qdrant, cloudflared
   - **Redis** (cache/queue)
   - **RedisInsight** (UI จัดการ redis)
   - **MinIO** (S3-compatible object storage)
